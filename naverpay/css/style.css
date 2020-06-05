@@ -1,0 +1,739 @@
+@charset "UTF-8";
+/*기본 세팅*/
+.onepage-pagination {
+  display: none !important;
+}
+
+#onepage {
+  height: 100%;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+/*배경 이미지*/
+.page2 {
+  background-image: url(../images/bg_about_section2.jpg);
+}
+
+.page3 {
+  background-image: url(../images/bg_about_section3.jpg);
+}
+
+.page4 {
+  background-image: url(../images/bg_about_section4.jpg);
+}
+
+/*이미지 스프라이트*/
+.header_menu {
+  background: url(../images/sp_m_header.png) no-repeat;
+}
+
+.slide_txt {
+  background: url(../images/sp_about_txt.png) no-repeat;
+}
+
+.page_txt {
+  background: url(../images/sp_about_txt2.png) no-repeat;
+}
+
+/*첫번째 페이지*/
+.page1 header {
+  width: 100%;
+  height: 110px;
+  background: url(../images/bg_header.jpg) repeat-x;
+}
+
+.page1 header a {
+  display: block;
+}
+
+.page1 header .wrap {
+  width: 1130px;
+  margin: auto;
+}
+
+.page1 header .wrap .up_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page1 header .wrap .up_side li {
+  height: 36px;
+}
+
+.page1 header .wrap .up_side li a {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.page1 header .wrap .up_side .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+}
+
+.page1 header .wrap .up_side .company .go_to_naver {
+  width: 47px;
+  height: 10px;
+  background-position: 0px -3px;
+}
+
+.page1 header .wrap .up_side .company .go_to_shopping {
+  width: 68px;
+  height: 15px;
+  background-position: 0px -20px;
+}
+
+.page1 header .wrap .up_side .utility {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 116px;
+}
+
+.page1 header .wrap .up_side .utility li a {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.page1 header .wrap .up_side .utility li .all_menu {
+  background-image: url(../images/sp_gnb_v14.png);
+  width: 16px;
+  height: 16px;
+  background-position: -60px 0px;
+}
+
+.page1 header .wrap .up_side .utility li .all_menu:hover {
+  width: 16px;
+  height: 16px;
+  background-position: -60px -30px;
+}
+
+.page1 header .wrap .under_side {
+  height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page1 header .wrap .under_side > div .go_to_pay {
+  width: 80px;
+  height: 33px;
+  background-position: 0px -100px;
+}
+
+.page1 header .wrap .under_side nav .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 550px;
+}
+
+.page1 header .wrap .under_side nav .gnb .transaction {
+  width: 56px;
+  height: 18px;
+  background-position: 0px -140px;
+}
+
+.page1 header .wrap .under_side nav .gnb .transaction:hover {
+  width: 56px;
+  height: 18px;
+  background-position: -100px -140px;
+}
+
+.page1 header .wrap .under_side nav .gnb .point {
+  width: 43px;
+  height: 18px;
+  background-position: 0px -160px;
+}
+
+.page1 header .wrap .under_side nav .gnb .point:hover {
+  width: 43px;
+  height: 18px;
+  background-position: -100px -160px;
+}
+
+.page1 header .wrap .under_side nav .gnb .transfer {
+  width: 30px;
+  height: 18px;
+  background-position: 0px -180px;
+}
+
+.page1 header .wrap .under_side nav .gnb .transfer:hover {
+  width: 30px;
+  height: 18px;
+  background-position: -100px -180px;
+}
+
+.page1 header .wrap .under_side nav .gnb .gift {
+  width: 44px;
+  height: 18px;
+  background-position: 0px -280px;
+}
+
+.page1 header .wrap .under_side nav .gnb .gift:hover {
+  width: 44px;
+  height: 18px;
+  background-position: -100px -280px;
+}
+
+.page1 header .wrap .under_side nav .gnb .event {
+  width: 80px;
+  height: 18px;
+  background-position: 0px -220px;
+}
+
+.page1 header .wrap .under_side nav .gnb .event:hover {
+  width: 80px;
+  height: 18px;
+  background-position: -100px -220px;
+}
+
+.page1 header .wrap .under_side nav .gnb .support {
+  width: 66px;
+  height: 18px;
+  background-position: 0px -240px;
+}
+
+.page1 header .wrap .under_side nav .gnb .support:hover {
+  width: 66px;
+  height: 18px;
+  background-position: -100px -240px;
+}
+
+.page1 .wrap .slide_container .slide_area {
+  overflow-x: hidden;
+}
+
+.page1 .wrap .slide_container .slide_area .frame {
+  width: 400%;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide1 {
+  background: url(../images/bg_about_section1_slide1.jpg) no-repeat center;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide2 {
+  background: url(../images/bg_about_section1_slide2.jpg) no-repeat center;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide3 {
+  background: url(../images/bg_about_section1_slide3.jpg) no-repeat center;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide4 {
+  background: url(../images/bg_about_section1_slide4.jpg) no-repeat center;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide {
+  width: 25%;
+  height: calc(100vh - 110px);
+  background-size: 100% calc(100vh - 110px);
+  float: left;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide .slide_txt {
+  height: 150px;
+  position: relative;
+  top: 18%;
+  left: 0;
+  margin: auto;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide .shopping {
+  width: 530px;
+  height: 150px;
+  background-position: -92px 0px;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide .movie {
+  width: 714px;
+  height: 150px;
+  background-position: -1px -155px;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide .music {
+  width: 714px;
+  height: 150px;
+  background-position: -1px -310px;
+}
+
+.page1 .wrap .slide_container .slide_area .frame .slide .comic {
+  width: 714px;
+  height: 150px;
+  background-position: -1px -620px;
+}
+
+.page1 .wrap .slide_container .pagination {
+  width: 100%;
+  position: fixed;
+  top: 164px;
+  left: 0;
+}
+
+.page1 .wrap .slide_container .pagination ul {
+  width: 110px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page1 .wrap .slide_container .pagination ul li a {
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-position: 0px 0px;
+  background: url(../images/sp_slide_nav.png) no-repeat;
+}
+
+.page1 .wrap .slide_container .pagination ul li a.on {
+  width: 13px;
+  height: 13px;
+  background-position: 0px -16px;
+}
+
+.page1 .wrap .slide_container .arrow button {
+  width: 35px;
+  height: 66px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -600px;
+  background: url(../images/btn_arrow_prev.png) no-repeat;
+}
+
+.page1 .wrap .slide_container .arrow .next {
+  margin-left: 600px;
+  background: url(../images/btn_arrow_next.png) no-repeat;
+}
+
+.page1 .wrap .slide_container .login {
+  width: 100%;
+  position: fixed;
+  top: 470px;
+  left: 0;
+}
+
+.page1 .wrap .slide_container .login .btn {
+  display: block;
+  width: 330px;
+  height: 68px;
+  background-position: 0px -1000px;
+  margin: auto;
+}
+
+.page1 .wrap .summary {
+  width: 100%;
+  height: 33.8%;
+  min-height: 262px;
+  background-color: #ffffff;
+  opacity: 0.85;
+  position: absolute;
+  bottom: 0;
+}
+
+.page1 .wrap .summary ul {
+  width: 1000px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: auto;
+}
+
+.page1 .wrap .summary ul .easy_pay {
+  width: 164px;
+  height: 148px;
+  background-position: -15px -808px;
+}
+
+.page1 .wrap .summary ul .safety_pay {
+  width: 197px;
+  height: 156px;
+  background-position: -210px -800px;
+}
+
+.page1 .wrap .summary ul .point {
+  width: 183px;
+  height: 155px;
+  background-position: -427px -801px;
+}
+
+/*두번째 페이지*/
+.contents .wrap {
+  width: 960px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents .wrap .text {
+  margin-top: 32px;
+}
+
+.contents .wrap .text .title {
+  position: relative;
+  top: -70px;
+  left: 0;
+  width: 460px;
+  height: 236px;
+  background-position: 0px 0px;
+}
+
+.contents .wrap .text .text_box {
+  position: relative;
+  top: 50px;
+  left: 0;
+  width: 290px;
+  height: 120px;
+  background-position: 0px -354px;
+}
+
+.contents .wrap .text .stores {
+  display: block;
+  position: relative;
+  top: 74px;
+  left: 0;
+  width: 240px;
+  height: 58px;
+  background-position: 0px -1600px;
+}
+
+.contents .wrap .object {
+  margin-top: 32%;
+}
+
+.contents .wrap .object div {
+  background: url(../images/obj_section1.png) no-repeat;
+}
+
+.contents .wrap .object .phone {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 706px;
+  height: 426px;
+  background-position: -9px -222px;
+}
+
+.contents .wrap .object .phone .screen1 {
+  position: absolute;
+  top: 24px;
+  left: 55px;
+  width: 626px;
+  height: 240px;
+  background-position: -64px -896px;
+  -webkit-animation: screen_1 3s both;
+          animation: screen_1 3s both;
+}
+
+@-webkit-keyframes screen_1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes screen_1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contents .wrap .object .phone .screen2 {
+  position: absolute;
+  top: -207px;
+  left: 130px;
+  width: 590px;
+  height: 446px;
+  background-position: -142px -1316px;
+}
+
+/*세번째 페이지*/
+.page3 .wrap {
+  width: 960px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page3 .wrap .text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 0;
+}
+
+.page3 .wrap .text .title {
+  position: relative;
+  top: -70px;
+  left: 0;
+  width: 396px;
+  height: 272px;
+  background-position: 0px -500px;
+}
+
+.page3 .wrap .text .text_box {
+  position: relative;
+  top: 50px;
+  left: 0;
+  width: 318px;
+  height: 120px;
+  background-position: 0px -854px;
+}
+
+.page3 .wrap .text .stores {
+  display: block;
+  position: relative;
+  top: 74px;
+  left: 0;
+  width: 240px;
+  height: 58px;
+  background-position: 0px -1665px;
+}
+
+.page3 .wrap .object {
+  margin-top: 32%;
+}
+
+.page3 .wrap .object div {
+  background: url(../images/obj_section2.png) no-repeat;
+}
+
+.page3 .wrap .object .phone {
+  position: relative;
+  top: -172px;
+  left: 0;
+  width: 352px;
+  height: 688px;
+  background-position: -3px -2px;
+}
+
+.page3 .wrap .object .phone .keypad1 {
+  position: absolute;
+  top: 260px;
+  left: 43px;
+  width: 42px;
+  height: 42px;
+  background-position: -407px -262px;
+}
+
+.page3 .wrap .object .phone .keypad2 {
+  position: absolute;
+  top: 260px;
+  left: 87px;
+  width: 42px;
+  height: 42px;
+  background-position: -811px -262px;
+}
+
+.page3 .wrap .object .phone .keypad3 {
+  position: absolute;
+  top: 260px;
+  left: 131px;
+  width: 42px;
+  height: 42px;
+  background-position: -1214px -262px;
+}
+
+.page3 .wrap .object .phone .keypad4 {
+  position: absolute;
+  top: 260px;
+  left: 175px;
+  width: 42px;
+  height: 42px;
+  background-position: -1618px -262px;
+}
+
+.page3 .wrap .object .phone .keypad5 {
+  position: absolute;
+  top: 260px;
+  left: 219px;
+  width: 42px;
+  height: 42px;
+  background-position: -2022px -262px;
+}
+
+.page3 .wrap .object .phone .keypad6 {
+  position: absolute;
+  top: 260px;
+  left: 263px;
+  width: 42px;
+  height: 42px;
+  background-position: -2425px -262px;
+}
+
+.page3 .wrap .object .phone .loading1 {
+  position: absolute;
+  top: 81px;
+  left: 29px;
+  width: 290px;
+  height: 514px;
+  background-position: -2552px -83px;
+}
+
+.page3 .wrap .object .phone .loading2 {
+  position: absolute;
+  top: 210px;
+  left: 68px;
+}
+
+/*네번째 페이지*/
+.page4 .wrap {
+  width: 960px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page4 .wrap .text {
+  margin-top: 94px;
+}
+
+.page4 .wrap .text .title {
+  position: relative;
+  top: -70px;
+  left: 0;
+  width: 305px;
+  height: 235px;
+  background-position: 0px -1000px;
+}
+
+.page4 .wrap .text .text_box {
+  position: relative;
+  top: 50px;
+  left: 0;
+  width: 296px;
+  height: 180px;
+  background-position: 0px -1354px;
+}
+
+.page4 .wrap .text .stores {
+  display: block;
+  position: relative;
+  top: 74px;
+  left: 0;
+  width: 240px;
+  height: 58px;
+  background-position: 0px -1730px;
+}
+
+.page4 .wrap .object {
+  margin-top: 32%;
+}
+
+.page4 .wrap .object div {
+  background: url(../images/obj_section3.png) no-repeat;
+}
+
+.page4 .wrap .object .phone {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 707px;
+  height: 426px;
+  background-position: -2px -106px;
+}
+
+.page4 .wrap .object .phone .screen1 {
+  position: absolute;
+  top: -16px;
+  left: 172px;
+  width: 382px;
+  height: 213px;
+  background-position: -171px -638px;
+}
+
+.page4 .wrap .object .phone .screen2 {
+  position: absolute;
+  top: -100px;
+  left: 150px;
+  width: 418px;
+  height: 235px;
+  background-position: -154px -1109px;
+}

@@ -1,0 +1,445 @@
+/*기본 세팅*/
+.onepage-pagination{display:none!important;}
+#onepage{height: 100%;}
+.page{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+}
+/*배경 이미지*/
+@for $i from 2 to 5 {
+    .page#{$i}{background-image: url(../images/bg_about_section#{$i}.jpg)}
+}
+/*이미지 스프라이트*/
+.header_menu{background: url(../images/sp_m_header.png) no-repeat;}
+.slide_txt{background: url(../images/sp_about_txt.png) no-repeat;}
+.page_txt{background: url(../images/sp_about_txt2.png) no-repeat;}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin item_center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin position($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin img_sprite($width, $height, $posX, $posY){
+    width: $width;
+    height: $height;
+    background-position: $posX $posY;
+}
+
+
+
+
+
+
+
+
+ /*첫번째 페이지*/
+.page1{
+    header{
+        width: 100%;
+        height: 110px;
+        background: url(../images/bg_header.jpg) repeat-x;
+
+        a{
+            display: block;  
+        }
+        .wrap{
+            width: 1130px;
+            margin: auto;
+
+            .up_side{
+                @include flex();
+
+                li{
+                    height: 36px;
+
+                    a{
+                        @include item_center;
+                    }
+                }
+                .company{
+                    @include flex();
+                    width: 130px;
+                    
+                    .go_to_naver{
+                        @include img_sprite(47px, 10px, 0px, -3px);
+                    }
+                    .go_to_shopping{
+                        @include img_sprite(68px, 15px, 0px, -20px);
+                    }
+                }
+                .utility{
+                    @include flex();
+                    width: 116px;
+
+                    li{
+                        a{
+                            color: #ffffff;
+                            font-size: 12px;
+                        }
+                        .all_menu{
+                            background-image: url(../images/sp_gnb_v14.png);
+                            @include img_sprite(16px, 16px, -60px, 0px);
+
+                            &:hover{
+                                @include img_sprite(16px, 16px, -60px, -30px);
+                            }
+                        }
+                    }
+                }
+            }
+            .under_side{
+                height: 74px;
+                @include flex();
+
+                > div .go_to_pay{
+                    @include img_sprite(80px, 33px, 0px, -100px);
+                }
+                nav .gnb{
+                    @include flex();
+                    width: 550px;
+                    .transaction{
+                        @include img_sprite(56px, 18px, 0px, -140px);
+
+                            &:hover{
+                                @include img_sprite(56px, 18px, -100px, -140px);
+                            }
+                    }
+                    .point{
+                        @include img_sprite(43px, 18px, 0px, -160px);
+
+                            &:hover{
+                                @include img_sprite(43px, 18px, -100px, -160px);
+                            }
+                    }
+                    .transfer{
+                        @include img_sprite(30px, 18px, 0px, -180px);
+
+                            &:hover{
+                                @include img_sprite(30px, 18px, -100px, -180px);
+                            }
+                    }
+                    .gift{
+                        @include img_sprite(44px, 18px, 0px, -280px);
+
+                            &:hover{
+                                @include img_sprite(44px, 18px, -100px, -280px);
+                            }
+                    }
+                    .event{
+                        @include img_sprite(80px, 18px, 0px, -220px);
+
+                            &:hover{
+                                @include img_sprite(80px, 18px, -100px, -220px);
+                            }
+                    }
+                    .support{
+                        @include img_sprite(66px, 18px, 0px, -240px);
+
+                            &:hover{
+                                @include img_sprite(66px, 18px, -100px, -240px);
+                            }
+                    }
+                }
+            }
+        }
+    }
+    .wrap{
+        .slide_container{
+            .slide_area{
+                overflow-x: hidden;
+
+                .frame{
+                    width: 400%;
+
+                    //슬라이드 배경 이미지
+                    @for $i from 1 to 5 {
+                        .slide#{$i}{background: url(../images/bg_about_section1_slide#{$i}.jpg) no-repeat center}
+                    }
+                    .slide{
+                        width: 25%;
+                        height: calc(100vh - 110px);
+                        background-size: 100% calc(100vh - 110px);
+                        float: left;
+                        .slide_txt{
+                            height: 150px;
+                            @include position(relative, 18%, 0);
+                            margin: auto;
+                        }
+                        .shopping{
+                            @include img_sprite(530px, 150px, -92px, 0px);
+                        } 
+                        .movie{
+                            @include img_sprite(714px, 150px, -1px, -155px);
+                        } 
+                        .music{
+                            @include img_sprite(714px, 150px, -1px, -310px);
+                        } 
+                        .comic{
+                            @include img_sprite(714px, 150px, -1px, -620px);
+                        } 
+                    } 
+                }
+            }
+            .pagination{
+                width: 100%;
+                @include position(fixed, 164px, 0);
+
+                ul{
+                    width: 110px;
+                    margin: auto;
+                    @include flex();
+
+                    li a{
+                        display: block;
+                        @include img_sprite(13px, 13px, 0px, 0px);
+                        background: url(../images/sp_slide_nav.png) no-repeat;
+                    }
+                    li a.on{
+                        @include img_sprite(13px, 13px, 0px, -16px);
+                    }
+                }
+            }
+            .arrow{
+                button{
+                    width: 35px;
+                    height: 66px;
+                    @include position(fixed, 30%, 50%);
+                    margin-left: -600px;
+                    background: url(../images/btn_arrow_prev.png) no-repeat;
+                }
+                .next{
+                    margin-left: 600px;
+                    background: url(../images/btn_arrow_next.png) no-repeat;
+                }
+            }
+            .login{
+                width: 100%;
+                @include position(fixed, 470px, 0);
+
+                .btn{
+                    display: block;
+                    @include img_sprite(330px, 68px, 0px, -1000px);
+                    margin: auto;
+                } 
+            }
+        }
+        .summary{
+            width: 100%;
+            height: 33.8%;
+            min-height: 262px;
+            background-color: #ffffff;
+            opacity: 0.85;
+            position: absolute;
+            bottom: 0;
+
+            ul{
+                width: 1000px;
+                height: 100%;
+                @include flex();
+                @include item_center();
+                margin: auto;
+                
+                .easy_pay{
+                    @include img_sprite(164px, 148px, -15px, -808px);
+                }
+                .safety_pay{
+                    @include img_sprite(197px, 156px, -210px, -800px);
+                }
+                .point{
+                    @include img_sprite(183px, 155px, -427px, -801px);
+                }
+            }
+        }
+    }
+}
+
+ /*두번째 페이지*/
+.contents{
+    .wrap{
+        width: 960px;
+        height: 100%;
+        margin: auto;
+        @include flex();
+
+        .text{
+            margin-top: 32px;
+
+            .title{
+                @include position(relative, -70px, 0);
+                @include img_sprite(460px, 236px, 0px, 0px);
+            }
+            .text_box{
+                @include position(relative, 50px, 0);
+                @include img_sprite(290px, 120px, 0px, -354px);
+            }
+            .stores{
+                display: block;
+                @include position(relative, 74px, 0);
+                @include img_sprite(240px, 58px, 0px, -1600px);
+            }
+        }
+        .object{
+            margin-top: 32%;
+
+            div{
+                background: url(../images/obj_section1.png) no-repeat;
+            }
+            .phone{
+                @include position(relative, 0, 0);
+                @include img_sprite(706px, 426px, -9px, -222px);
+    
+                .screen1{
+                    @include position(absolute, 24px, 55px);
+                    @include img_sprite(626px, 240px, -64px, -896px);
+                    animation: screen_1 3s both;
+                } 
+                @keyframes screen_1{
+                    from{opacity: 0;}
+                    to{opacity: 1;}
+                }
+                .screen2{
+                    @include position(absolute, -207px, 130px);
+                    @include img_sprite(590px, 446px, -142px, -1316px);
+                }
+            }
+        }
+    }  
+}
+
+
+ /*세번째 페이지*/
+ .page3{
+    .wrap{
+        width: 960px;
+        height: 100%;
+        margin: auto;
+        @include flex();
+
+        .text{
+            order:2;
+            margin-top: 0;
+
+            .title{
+                @include position(relative, -70px, 0);
+                @include img_sprite(396px, 272px, 0px, -500px);
+            }
+            .text_box{
+                @include position(relative, 50px, 0);
+                @include img_sprite(318px, 120px, 0px, -854px);
+            }
+            .stores{
+                display: block;
+                @include position(relative, 74px, 0);
+                @include img_sprite(240px, 58px, 0px, -1665px);
+            }
+        }
+        .object{
+            margin-top: 32%;
+
+            div{
+                background: url(../images/obj_section2.png) no-repeat;
+            }
+            .phone{
+                @include position(relative, -172px, 0);
+                @include img_sprite(352px, 688px, -3px, -2px);
+    
+                .keypad1{
+                    @include position(absolute, 260px, 43px);
+                    @include img_sprite(42px, 42px, -407px, -262px);
+                } 
+                .keypad2{
+                    @include position(absolute, 260px, 87px);
+                    @include img_sprite(42px, 42px, -811px, -262px);
+                }
+                .keypad3{
+                    @include position(absolute, 260px, 131px);
+                    @include img_sprite(42px, 42px, -1214px, -262px);
+                } 
+                .keypad4{
+                    @include position(absolute, 260px, 175px);
+                    @include img_sprite(42px, 42px, -1618px, -262px);
+                }
+                .keypad5{
+                    @include position(absolute, 260px, 219px);
+                    @include img_sprite(42px, 42px, -2022px, -262px);
+                } 
+                .keypad6{
+                    @include position(absolute, 260px, 263px);
+                    @include img_sprite(42px, 42px, -2425px, -262px);
+                }
+                .loading1{
+                    @include position(absolute, 81px, 29px);
+                    @include img_sprite(290px, 514px, -2552px, -83px);
+                }
+                .loading2{
+                    
+                    @include position(absolute, 210px, 68px);
+                    
+                }
+            }
+        }
+    }  
+}
+
+
+
+ /*네번째 페이지*/
+ .page4{
+    .wrap{
+        width: 960px;
+        height: 100%;
+        margin: auto;
+        @include flex();
+
+        .text{
+            margin-top: 94px;
+
+            .title{
+                @include position(relative, -70px, 0);
+                @include img_sprite(305px, 235px, 0px, -1000px);
+            }
+            .text_box{
+                @include position(relative, 50px, 0);
+                @include img_sprite(296px, 180px, 0px, -1354px);
+            }
+            .stores{
+                display: block;
+                @include position(relative, 74px, 0);
+                @include img_sprite(240px, 58px, 0px, -1730px);
+            }
+        }
+        .object{
+            margin-top: 32%;
+
+            div{
+                background: url(../images/obj_section3.png) no-repeat;
+            }
+            .phone{
+                @include position(relative, 0, 0);
+                @include img_sprite(707px, 426px, -2px, -106px);
+
+                .screen1{
+                    @include position(absolute, -16px, 172px);
+                    @include img_sprite(382px, 213px, -171px, -638px);
+                } 
+                .screen2{
+                    @include position(absolute, -100px, 150px);
+                    @include img_sprite(418px, 235px, -154px, -1109px);
+                }
+            }
+        }
+    }  
+}
